@@ -1,0 +1,7 @@
+*.exe
+*.pdb
+*.lik
+*.log
+*.obj
+*.tlog
+.vs/

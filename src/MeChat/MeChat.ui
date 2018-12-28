@@ -1,25 +1,218 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>MeChatClass</class>
- <widget class="QWidget" name="MeChatClass" >
-  <property name="objectName" >
-   <string notr="true">MeChatClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QWidget" name="MeChatClass">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>600</width>
-	<height>400</height>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
    <string>MeChat</string>
   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="WindowTitle" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#WindowTitle
+{
+background-color: qconicalgradient(cx:0.709139, cy:0.8245, 	angle:0, stop:0.240816 rgba(52, 72, 161, 255), stop:0.240997 rgba(62, 88, 201, 255), stop:0.258892 rgba(62, 88, 201, 255), stop:0.259223 rgba(42, 153, 235, 255), stop:0.758252 rgba(42, 153, 235, 255), stop:0.759223 rgba(52, 72, 161, 255));
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="MinImage">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#MinImage
+{
+border-width: 2px 2px 2px 2px;
+border-style: solid;
+border-color: rgb(255,255,255);
+border-radius:17px; 
+margin:5px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Image</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Name">
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#Name
+{
+	color:#dbdbdb
+	
+}
+QLabel#Name:hover
+{
+	color:#FFFFFF
+}</string>
+        </property>
+        <property name="text">
+         <string>尼古拉斯 · 赵四</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_chat">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>会话消息</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton#toolButton_chat{
+border-radius:3px;
+color:#DCDCDC;
+padding:3px;
+margin:0px;
+background:none;
+border-style:none;
+}
+QToolButton#toolButton_chat:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+}</string>
+        </property>
+        <property name="text">
+         <string>会话</string>
+        </property>
+        <property name="icon">
+         <iconset resource="toolButton.qrc">
+          <normaloff>:/toolButton/Resources/Image/Button/toolButton/Chat.png</normaloff>:/toolButton/Resources/Image/Button/toolButton/Chat.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page"/>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </item>
+  </layout>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="MeChat.qrc"/>
+  <include location="MeChat.qrc"/>
+  <include location="toolButton.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>

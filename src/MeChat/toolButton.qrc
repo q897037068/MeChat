@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="toolButton">
+    <file>Resources/Image/Button/toolButton/Chat.png</file>
+  </qresource>
+</RCC>

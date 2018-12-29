@@ -28,6 +28,9 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="全局信息存储">
+      <UniqueIdentifier>{94afefdf-59af-4d9e-8a1f-05c1300e0378}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="MeChat.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeChatApp.cpp">
+      <Filter>全局信息存储</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,5 +60,10 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MeChat.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MeChatApp.h">
+      <Filter>全局信息存储</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

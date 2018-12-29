@@ -1,0 +1,17 @@
+/* 标题栏背景色 */
+QWidget#WindowTitleBackGround
+{
+	background-color: qconicalgradient(cx:0.709139, cy:0.8245, 	angle:0, stop:0.240816 rgba(52, 72, 161, 255), stop:0.240997 rgba(62, 88, 201, 255), stop:0.258892 rgba(62, 88, 201, 255), stop:0.259223 rgba(42, 153, 235, 255), stop:0.758252 rgba(42, 153, 235, 255), stop:0.759223 rgba(52, 72, 161, 255));
+}
+
+
+/* 登录名称默认色及鼠标经过颜色 */
+QLabel#LoginName
+{
+	color:#dbdbdb
+	
+}
+QLabel#LoginName:hover
+{
+	color:#FFFFFF
+}

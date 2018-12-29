@@ -1,4 +1,15 @@
 <RCC>
-    <qresource prefix="MeChat">
-    </qresource>
+  <qresource prefix="MeChat">
+    <file>Resources/Image/Min.png</file>
+    <file>Resources/Image/Exit.png</file>
+    <file>Resources/Image/Max.png</file>
+    <file>Resources/Image/JiShiBen.png</file>
+    <file>Resources/Image/Help.png</file>
+    <file>Resources/Image/BaoBiao.png</file>
+    <file>Resources/Image/KeHu.png</file>
+    <file>Resources/Image/Friend.png</file>
+    <file>Resources/Image/QunFa.png</file>
+    <file>Resources/Image/HuiHua.png</file>
+    <file>Resources/Image/KF.png</file>
+  </qresource>
 </RCC>
